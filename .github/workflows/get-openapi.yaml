@@ -1,0 +1,8 @@
+name: Get the OpenApi Specification
+on:
+  workflow_dispatch:
+jobs:
+  get-open-api:
+    uses: ethan92429/openapi-generator-workflows/.github/workflows/get-openapi-file.yaml@main
+    with:
+      openapi-url: "https://cad.onshape.com/api/openapi"
